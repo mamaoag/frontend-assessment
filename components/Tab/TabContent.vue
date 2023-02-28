@@ -9,7 +9,6 @@
         name: "TabContentComponent",
         props: {
             content: String,
-            default: {}
         }
     }
 </script>
