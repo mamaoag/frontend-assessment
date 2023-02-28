@@ -28,7 +28,6 @@ import TabNavigation from './TabNavigation.vue';
     },
     methods: {
         handleSelected(index) {
-            console.log(index)
             this.selected = index;
         }
     },
