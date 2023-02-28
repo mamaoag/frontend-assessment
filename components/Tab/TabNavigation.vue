@@ -51,7 +51,7 @@
         color: #000;
     }
 
-    .active {
+    .tab__header .active {
         border-bottom: 2px solid #fea706;
         font-weight: bold;
         color: #000;
