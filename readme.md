@@ -1,40 +1,40 @@
-Introduction
----
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries, but Vue.js is preferred and jQuery is not recommended. Along with following best practices, bonus points for following our [coding guidelines](https://github.com/mindarc/frontend-assessment/wiki/Coding-guidelines). 
+# Front-end Assessment
 
-Exercise 1
----
-Build a responsive page based on the designs.
+An assessment exam for Filta. Comprises of multiple exercises to test the skills of the applicant.
 
-##### Requirements
-1. Match the designs exactly.
-2. Needs to be responsive.
+## Author
 
-##### Designs
-* exercise1-desktop.png
-* exercise1-mobile.png
+- [@mamaoag - Akia Japhet Mamaoag](https://www.github.com/mamaoag)
 
-##### Assets
-* Desktop banner - https://via.placeholder.com/1920x650
-* Mobile banner - https://via.placeholder.com/600x600
-* Content images - https://via.placeholder.com/400x300
+## Tech Stack
 
-Exercise 2
----
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
+**Client:** NuxtJS, Bootstrap, Vue.js, HTML5, CSS3
 
-##### Requirements
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
+## Installation
 
-###### Bonus points
-* Improve the user experience with meaningful animations/transitions.
-* Design and styling.
-* Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
+Clone this repository and run npm install.
 
-Submission
----
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
+```bash
+  git clone https://github.com/mamaoag/frontend-assessment
+  cd frontend-assessment
+  npm install
+```
+
+## Usage
+
+To run this on the browser. Do the following commands
+
+```bash
+npm run dev
+```
+
+## FAQ
+
+#### Why did you use NuxtJS instead of just Vue?
+
+While a simple SPA would be suffice, we would have to rely on the client browser to load all our javascript resources then load the site. However we lose SEO and indexing for this. Also NuxtJS handles the abstraction of handling SSR.
+
+#### Why is the result of ('b'+'a'+ + 'a' + 'a').toLowerCase() 'banana'?
+
+The main reason behind lies on `+'a'`. The string is evaluated like this:
+`('b' + 'a' + (+'a'))`. Appending + on a string and evaluating it in an integer convert the said character to a number. Example: `+'1' + 1 = 2`. In this scenario `a` is not a numeric character therefore it expresses the value as `NaN`. and with out function toLowerCase evaluate this as part of the string hence: 'banana'
