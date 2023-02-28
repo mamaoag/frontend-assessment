@@ -41,4 +41,10 @@ import TabNavigation from './TabNavigation.vue';
         background: #fff;
         border-radius: 12px;
     }
+
+    @media (max-width: 767.98px) {
+        .tab__container {
+            display: none;
+        }
+    }
 </style>
