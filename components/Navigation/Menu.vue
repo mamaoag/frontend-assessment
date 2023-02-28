@@ -35,7 +35,7 @@
             >
           </div>
           <div>
-            <NuxtLink to="/exercise-2" @click.prevent ="handleClick"
+            <NuxtLink to="/exercise-2" @click.prevent="handleClick"
               >Exercise 2</NuxtLink
             >
           </div>

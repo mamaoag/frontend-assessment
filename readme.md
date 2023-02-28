@@ -1,19 +1,14 @@
-
 # Front-end Assessment
 
 An assessment exam for Filta. Comprises of multiple exercises to test the skills of the applicant.
-
-
 
 ## Author
 
 - [@mamaoag - Akia Japhet Mamaoag](https://www.github.com/mamaoag)
 
-
 ## Tech Stack
 
 **Client:** NuxtJS, Bootstrap, Vue.js, HTML5, CSS3
-
 
 ## Installation
 
@@ -24,14 +19,14 @@ Clone this repository and run npm install.
   cd frontend-assessment
   npm install
 ```
-    
+
 ## Usage
+
 To run this on the browser. Do the following commands
 
 ```bash
 npm run dev
 ```
-
 
 ## FAQ
 
@@ -41,6 +36,5 @@ While a simple SPA would be suffice, we would have to rely on the client browser
 
 #### Why is the result of ('b'+'a'+ + 'a' + 'a').toLowerCase() 'banana'?
 
-The main reason behind lies on `+'a'`. The string is evaluated like this: 
+The main reason behind lies on `+'a'`. The string is evaluated like this:
 `('b' + 'a' + (+'a'))`. Appending + on a string and evaluating it in an integer convert the said character to a number. Example: `+'1' + 1 = 2`. In this scenario `a` is not a numeric character therefore it expresses the value as `NaN`. and with out function toLowerCase evaluate this as part of the string hence: 'banana'
-
