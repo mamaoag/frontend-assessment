@@ -3,9 +3,9 @@
     <div class="container">
       <AccordionItem
         v-for="(d, idx) in data"
-        :selected="idx === selected"
-        :accordionItem="idx"
         :key="idx"
+        :selected="idx === selected"
+        :accordion-item="idx"
         :title="d.title"
         :content="d.content"
         @handleSelect="handleSelected"
@@ -19,23 +19,23 @@ import AccordionItem from './AccordionItem.vue'
 
 export default {
   name: 'AccordionContainerComponent',
-  data() {
-    return {
-      selected: 0,
-    }
-  },
+  components: { AccordionItem },
   props: {
     data: {
       type: Array,
       required: false,
     },
   },
+  data() {
+    return {
+      selected: 0,
+    }
+  },
   methods: {
     handleSelected(index) {
       this.selected = index === this.selected ? null : index
     },
   },
-  components: { AccordionItem },
 }
 </script>
 

@@ -1,11 +1,11 @@
 <template>
   <nav class="tab__header">
-    <div class="tab__header_container" v-if="headers && headers.length > 0">
+    <div v-if="headers && headers.length > 0" class="tab__header_container">
       <div
-        :class="{ active: selected == idx }"
-        class="tab__link"
         v-for="(header, idx) in headers"
         :key="idx"
+        :class="{ active: selected == idx }"
+        class="tab__link"
         @click="handleClick(idx)"
       >
         {{ header.title }}

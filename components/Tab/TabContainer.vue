@@ -22,23 +22,23 @@ import TabNavigation from './TabNavigation.vue'
 
 export default {
   name: 'TabContainerComponent',
-  data() {
-    return {
-      selected: 0,
-    }
-  },
+  components: { TabContent, TabNavigation },
   props: {
     data: {
       type: Array,
       required: false,
     },
   },
+  data() {
+    return {
+      selected: 0,
+    }
+  },
   methods: {
     handleSelected(index) {
       this.selected = index
     },
   },
-  components: { TabContent, TabNavigation },
 }
 </script>
 

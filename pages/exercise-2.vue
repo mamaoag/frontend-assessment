@@ -16,6 +16,7 @@ import data from '../data/data.json'
 
 export default {
   name: 'ExceriseTwoPage',
+  components: { TabContainer, AccordionContainer },
   asyncData({ params }) {
     return { data }
   },
@@ -24,7 +25,6 @@ export default {
       return screen.width <= 760
     },
   },
-  components: { TabContainer, AccordionContainer },
 }
 </script>
 
